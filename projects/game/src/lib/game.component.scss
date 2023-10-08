@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.game-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  min-height: 160px;
+}
+
+.game-result {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  .gane-card-score {
+    font-weight: 700;
+  }
+}
+
+mat-card {
+  padding: 16px;
+  text-align: center;
+  width: calc(50% - 16px);
+}
+
+mat-card-header,
+mat-card-actions {
+  justify-content: center;
+}
+
+.game-points {
+  font-size: 18px;
+}
+
+.game-winner-label {
+  display: inline-block;
+  padding: 4px 8px;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.game-actions {
+  display: flex;
+  justify-content: center;
+}

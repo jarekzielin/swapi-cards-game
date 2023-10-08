@@ -1,0 +1,15 @@
+<h1>Star Wars - cards game</h1>
+
+<mat-form-field>
+  <mat-label>Choose a collection</mat-label>
+  <mat-select (valueChange)="game.init($event)">
+    <mat-option *ngFor="let collection of collections" [value]="collection">
+      {{ collection }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-divider></mat-divider>
+
+<!-- Game -->
+<lib-game #game></lib-game>
